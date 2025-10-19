@@ -13,7 +13,7 @@ def raise_if_error(func):
             res = func(*args, **kwargs)
             try:
                 json_res = res.json()
-            except json.decoder.JSONDecodeError:
+            except (json.decoder.JSONDecodeError, requests.exceptions.JSONDecodeError):
                 json_res = {}
             res.raise_for_status()
 
