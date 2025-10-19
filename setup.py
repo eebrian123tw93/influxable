@@ -12,7 +12,7 @@ setup(
     name='influxable',
     packages=find_packages(),
     version=VERSION,
-    license='MIT',
+    license='MIT AND (Apache-2.0 OR BSD-2-Clause)',
     description='A lightweight python ORM / ODM for InfluxDB',
     long_description=readme,
     author='Javid Mougamadou',
